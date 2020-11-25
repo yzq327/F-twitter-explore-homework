@@ -2,3 +2,13 @@
   margin-top: 0;
   font-size: $font-size;
 }
+
+@mixin btn-variant($color-bg, $color, $width) {
+  background-color: $color-bg;
+  color: $color;
+  width: $width;
+  text-align: center;
+  @extend .btn-border;
+  padding: $button-padding;
+  border-radius: 80px;
+}
