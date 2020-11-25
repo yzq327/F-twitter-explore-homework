@@ -41,9 +41,13 @@ button {
 }
 
 h1,
-h2,
-h3,
-p {
+h2 {
   color: $heading-color;
   margin: 0;
+}
+
+p {
+  color: $color-base;
+  font-size: 14px;
+  margin: 20px 0;
 }
