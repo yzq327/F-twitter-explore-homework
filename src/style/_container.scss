@@ -1,3 +1,38 @@
 .container {
   @extend .border;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  form {
+    @extend .border;
+    padding: 50px;
+    margin: 100px;
+  }
+  h2 {
+    text-align: center;
+  }
+  p {
+    color: $color-base;
+    font-size: 14px;
+    margin: 20px 0;
+  }
+  div {
+    @extend .border;
+    margin-top: 10px;
+  }
+  .forget-passsword {
+    color: $primary-color;
+  }
+  .login-or-register {
+    text-align: center;
+    .login {
+      @include btn-variant($body-bg, $primary-color, 300px);
+    }
+
+    .register {
+      @include btn-variant($primary-color, $white, 300px);
+    }
+  }
 }
